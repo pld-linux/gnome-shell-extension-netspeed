@@ -3,7 +3,7 @@ Name:		gnome-shell-extension-netspeed
 Version:	48
 Release:	1
 License:	GPL v2+
-Source0:	%{url}/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
+Source0:	https://github.com/martinkg/NetSpeed/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	54ae25127a96d8b780674099a794ec1e
 URL:		https://github.com/martinkg/NetSpeed
 BuildRequires:	gettext
