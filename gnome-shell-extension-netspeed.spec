@@ -1,7 +1,7 @@
 Summary:	A gnome-shell extension to show speed of the internet
 Name:		gnome-shell-extension-netspeed
 Version:	48
-Release:	1
+Release:	2
 License:	GPL v2+
 Source0:	https://github.com/martinkg/NetSpeed/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	54ae25127a96d8b780674099a794ec1e
@@ -32,6 +32,9 @@ rm -rf $RPM_BUILD_ROOT
 %meson_install
 
 %{__rm} $RPM_BUILD_ROOT%{_datadir}/glib-2.0/schemas/gschemas.compiled
+
+%{__mv} $RPM_BUILD_ROOT%{_localedir}/es{_ES,}
+%{__mv} $RPM_BUILD_ROOT%{_localedir}/nl{_NL,}
 
 %find_lang %{name} --all-name
 
